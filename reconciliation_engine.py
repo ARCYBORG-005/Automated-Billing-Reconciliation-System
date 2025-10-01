@@ -85,7 +85,7 @@ def generate_alert_summary(leakage_df, compliance_df, threshold=1500.00):
     if not alerts.empty:
         # --- RICH TABLE GENERATION (Professional Output) ---
         alert_message = (
-            f"\n [bold red]CRITICAL REAL-TIME LEAKAGE ALERT ({date.today()})[/bold red] 🚨\n"
+            f"\n [bold red]CRITICAL REAL-TIME LEAKAGE ALERT ({date.today()})[/bold red] \n"
             "Action Required: Projects below have unbilled T&M revenue exceeding the $"
             f"{threshold:.2f} threshold. [b yellow]Invoice immediately[/b yellow]."
         )
